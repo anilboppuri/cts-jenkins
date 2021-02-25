@@ -8,10 +8,15 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.cts.testing.callbacks.Calculator;
+
 public class TestCalculator {
 
+	static Calculator calc;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
+		 
+		calc = new Calculator();
 		
 		System.out.println("SUBC");
 		
@@ -35,12 +40,22 @@ public class TestCalculator {
 
 	@Test
 	public void testDollarToRupee() {
-		fail("Not yet implemented");
+		
+		double actual = calc.dollarToRupee(100);
+		double expected  = 7565;
+		assertEquals(expected,actual);
+		
 	}
 	
 	@Test
 	public void testDollarToRupee2() {
-		fail("Not yet implemented");
+		double actual = calc.dollarToRupee(0);
+		double expected = 0.0;
+		assertEquals(expected, actual);
+		
+		
+		
+		
 	}
 
 }

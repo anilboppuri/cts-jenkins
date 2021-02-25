@@ -8,8 +8,12 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.cts.testing.callbacks.Calculator;
+
 public class TestCalculator2 {
 
+	static Calculator calc;
+	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -28,7 +32,9 @@ public class TestCalculator2 {
 
 	@Test
 	public void testHashCode() {
-		fail("Not yet implemented");
+		double actual = calc.dollarToRupee(-200);
+		double expected = -200 * 75.65;
+		assertEquals(expected,actual);
 	}
 
 }

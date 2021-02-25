@@ -35,8 +35,8 @@ public class TestMyMath {
 		
 		int expected = 30;
 		int actual = obj.add(a,b);
-		boolean expectedResult= expected - actual == 0;
-		assertEquals(expectedResult,true);
+	//	boolean expectedResult= expected - actual == 0;
+		assertEquals(expected,actual);
 		
 		
 		
