@@ -41,7 +41,7 @@ public class TestCalculator {
 	@Test
 	public void testDollarToRupee() {
 		
-		double actual = calc.dollarToRupee(100);
+		double actual = Math.round((calc.dollarToRupee(100)));
 		double expected  = 7565;
 		assertEquals(expected,actual);
 		

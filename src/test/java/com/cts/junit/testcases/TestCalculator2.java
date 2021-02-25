@@ -16,6 +16,7 @@ public class TestCalculator2 {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
+		calc = new Calculator();
 	}
 
 	@AfterClass
