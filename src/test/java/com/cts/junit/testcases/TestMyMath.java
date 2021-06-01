@@ -22,9 +22,7 @@ public class TestMyMath {
 		int actual = obj.add(a,b);
 		assertEquals(expected, actual);
 		
-		
-		
-	}
+   }
 	@Test
 	public void testAddNonZero() {
 		//fail("Not yet implemented");
@@ -37,8 +35,6 @@ public class TestMyMath {
 		int actual = obj.add(a,b);
 	//	boolean expectedResult= expected - actual == 0;
 		assertEquals(expected,actual);
-		
-		
 		
 	}
 	
